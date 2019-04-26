@@ -4,6 +4,7 @@ function TotalTime(props) {
     return (
         <form>
             <div className="form-group"> 
+            <p>{props.times}</p>
             <input 
                 value={props.total}
                 onChange={(e) => {
@@ -12,7 +13,7 @@ function TotalTime(props) {
                 type="number" 
                 className="form-control" 
                 id="totalTime" 
-                placeholder="Input Total Time" />         
+                placeholder="Input Total Time" />    
             </div>        
         </form> 
     )
